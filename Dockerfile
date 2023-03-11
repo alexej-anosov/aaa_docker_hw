@@ -1,10 +1,8 @@
 FROM python:3.8
 
-ENV FLASK_APP=app
 LABEL version="0.1.0" author="user@name.com"
 
-WORKDIR app
-COPY . /app
+COPY . .
 RUN pip install -r requirements.txt
 
 EXPOSE 8080
